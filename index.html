@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puck Nations</title>
+<meta name="description" content="Puck Nations: an automated ice hockey league of nations. New matches every day.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,500;0,700;1,900&display=swap" rel="stylesheet">
+<style>
+  :root { --navy:#0A0E1A; --ice:#EEF3FA; --red:#D52B1E; --blue:#1F4FD1; }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; background:var(--navy); color:#fff; font-family:Inter, system-ui, sans-serif;
+         display:flex; flex-direction:column; }
+  main { flex:1; display:grid; place-items:center; padding:64px 24px; position:relative; overflow:hidden; }
+  .lines { position:absolute; inset:0; pointer-events:none; }
+  .lines i { position:absolute; top:0; bottom:0; width:10px; opacity:.18; }
+  .lines .r { left:50%; background:var(--red); transform:translateX(-50%); }
+  .lines .b1 { left:22%; background:var(--blue); } .lines .b2 { right:22%; background:var(--blue); }
+  .card { position:relative; text-align:center; max-width:640px; }
+  img { width:120px; height:120px; border-radius:50%; display:block; margin:0 auto 28px; }
+  h1 { font-weight:900; font-style:italic; font-size:clamp(48px, 9vw, 88px); letter-spacing:-0.03em; margin:0; line-height:.95; }
+  p.sub { font-weight:700; letter-spacing:.18em; text-transform:uppercase; font-size:14px; color:#9FB4E8; margin:20px 0 36px; }
+  p { font-size:18px; line-height:1.55; color:#C9D2E6; margin:0 0 14px; }
+  .links { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:32px; }
+  .links a { color:#fff; text-decoration:none; font-weight:700; border:1px solid rgba(255,255,255,.25); padding:12px 20px; border-radius:999px; }
+  .links a:hover { background:#fff; color:var(--navy); }
+  footer { padding:24px; text-align:center; font-size:14px; color:#8090B0; }
+  footer a { color:#C9D2E6; }
+</style>
+</head>
+<body>
+<main>
+  <div class="lines" aria-hidden="true"><i class="b1"></i><i class="r"></i><i class="b2"></i></div>
+  <div class="card">
+    <img src="logo.png" alt="Puck Nations logo: a hockey puck crossing centre ice">
+    <h1>PUCK NATIONS</h1>
+    <p class="sub">16 nations · one champion</p>
+    <p>An ice hockey league of nations, played out by a physics simulation. Every match is generated and published automatically, with the standings updated after each game.</p>
+    <p>Follow your nation and see who takes the title.</p>
+    <div class="links">
+      <a href="https://www.instagram.com/pucknations_/">Instagram</a>
+      <a href="https://www.youtube.com/@pucknations">YouTube</a>
+      <a href="https://www.tiktok.com/@pucknations">TikTok</a>
+    </div>
+  </div>
+</main>
+<footer><a href="privacy.html">Privacy policy</a></footer>
+</body>
+</html>
